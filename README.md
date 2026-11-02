@@ -1,5 +1,7 @@
 # RelayDesk
 
+**[Open the interactive delivery lab](https://dangerous37.github.io/relaydesk/)**. Queue a booking, crash the worker after the receiver commits, then retry. Turn receiver deduplication off and see why one queued event can create two appointments. The lab uses a browser service worker and IndexedDB. The Node.js drill below exercises the SQLite implementation.
+
 A booking system times out waiting for a webhook acknowledgment and sends the same booking again. RelayDesk gives the sender a durable receipt, then delivers the event to a local CRM adapter on a separate retry schedule.
 
 ## Try the failure drill
